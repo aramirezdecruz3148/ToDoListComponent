@@ -11,7 +11,6 @@ class Component {
 
     renderDom() {
         const html = this.renderTemplate();
-        console.log(html);
         const dom = htmlToDOM(html);
         this.rootElement = dom;
         return dom;

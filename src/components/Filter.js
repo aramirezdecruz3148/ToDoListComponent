@@ -5,6 +5,7 @@ class Filter extends Component {
     renderTemplate() {
         return /*html*/`
         <section class="filter-section">
+            <label>Filter Tasks:</label>
             <input id="text-filter" name="text-filter" type="text" placeholder="search list by task">
             <input name="radio-filter" value="all" type="radio" id="all" checked>
             <label for="all">All Tasks</label>

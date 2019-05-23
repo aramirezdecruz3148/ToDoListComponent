@@ -15,6 +15,7 @@ h1 {
     justify-content: center;
     font-size: 2em;
     color: #2486cc;
+    text-shadow: 2px 2px 2px #2d3d51;
 }
 
 #todos {
@@ -29,6 +30,8 @@ h1 {
     color: rgb(76, 76, 76);
     width: 500px;
     height: auto;
+    box-shadow: 1px 1px 1px #2d3d51;
+    text-shadow: .5px .5px .5px #2d3d51;
 }
 
 label {

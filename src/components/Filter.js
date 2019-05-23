@@ -9,9 +9,9 @@ class Filter extends Component {
             <input id="task" name="text-filter" type="text" placeholder="search list by task">
             <input name="radio-filter" value="all" type="radio" id="all" checked>
             <label for="all">All Tasks</label>
-            <input name="radio-filter" value="completed" type="radio" id="completed">
+            <input name="radio-filter" value="true" type="radio" id="completed">
             <label for="completed">Completed Tasks</label>
-            <input name="radio-filter" value="not-done" type="radio" id="not-completed">
+            <input name="radio-filter" value="false" type="radio" id="not-completed">
             <label for="not-done">Not Done</label>
         </section>
         `;

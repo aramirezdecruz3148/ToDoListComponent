@@ -28,7 +28,7 @@ h1 {
     font-size: 1.5em;
     color: rgb(76, 76, 76);
     width: 500px;
-    height: 286px;
+    height: auto;
 }
 
 label {

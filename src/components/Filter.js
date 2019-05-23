@@ -4,7 +4,7 @@ class Filter extends Component {
 
     renderTemplate() {
         return /*html*/`
-        <section class="filter-section">
+        <form class="filter-section">
             <label>Filter Tasks:</label>
             <input id="task" name="text-filter" type="text" placeholder="search list by task">
             <input name="radio-filter" value="all" type="radio" id="all" checked>
@@ -13,7 +13,7 @@ class Filter extends Component {
             <label for="completed">Completed Tasks</label>
             <input name="radio-filter" value="false" type="radio" id="not-completed">
             <label for="not-done">Not Done</label>
-        </section>
+        </form>
         `;
     }
 }

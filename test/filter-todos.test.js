@@ -44,3 +44,30 @@ test('filter by task', assert => {
         completed: true
     }]);
 });
+
+test('no task typed in input, returns all tasks', assert => {
+    // arrange
+    const filter = {
+        task: ''
+    };
+    const filtered = filterTodos(todos, filter);
+    // act
+    // assert
+    assert.deepEqual(filtered, [
+        {
+            task: 'Wash dog',
+            label: 'wash-dog',
+            completed: true
+        },
+        {
+            task: 'Clean house',
+            label: 'clean-house',
+            completed: false
+        },
+        {
+            task: 'Do laundry',
+            label: 'do-laundry',
+            completed: false
+        }
+    ]);
+});

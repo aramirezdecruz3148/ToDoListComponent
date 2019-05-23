@@ -109,3 +109,26 @@ test('radio button `all` returns all tasks', assert => {
         }
     ]);
 });
+
+test('radio button `false` not done tasks', assert => {
+    // arrange
+    const filter = {
+        task: '',
+        completed: false
+    };
+    const filtered = filterTodos(todos, filter);
+    // act
+    // assert
+    assert.deepEqual(filtered, [
+        {
+            task: 'Clean house',
+            label: 'clean-house',
+            completed: false
+        },
+        {
+            task: 'Do laundry',
+            label: 'do-laundry',
+            completed: false
+        }
+    ]);
+});

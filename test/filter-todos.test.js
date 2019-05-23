@@ -150,3 +150,39 @@ test('radio button `true` not done tasks', assert => {
         }
     ]);
 });
+
+test('radio button `true` and typed input', assert => {
+    // arrange
+    const filter = {
+        task: 'Wash dog',
+        completed: true
+    };
+    const filtered = filterTodos(todos, filter);
+    // act
+    // assert
+    assert.deepEqual(filtered, [
+        {
+            task: 'Wash dog',
+            label: 'wash-dog',
+            completed: true
+        }
+    ]);
+});
+
+test('radio button `false` and typed input', assert => {
+    // arrange
+    const filter = {
+        task: 'Do laundry',
+        completed: false
+    };
+    const filtered = filterTodos(todos, filter);
+    // act
+    // assert
+    assert.deepEqual(filtered, [
+        {
+            task: 'Do laundry',
+            label: 'do-laundry',
+            completed: false
+        }
+    ]);
+});

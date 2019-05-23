@@ -20,7 +20,7 @@ const todos = [
         completed: false
     },
     {
-        task: 'Embrioder mask',
+        task: 'Embroider mask',
         label: 'embroider-mask',
         completed: false
     }

@@ -3,7 +3,7 @@ import Component from './Component.js';
 class AddTodo extends Component {
 
     render() {
-        const form = this.renderDom();
+        const form = this.renderDOM();
         const onAdd = this.props.onAdd;
 
         form.addEventListener('submit', event => {

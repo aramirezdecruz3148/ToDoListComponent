@@ -7,7 +7,7 @@ import AddTodo from './AddTodo.js';
 class App extends Component {
     
     render() {
-        const dom = this.renderDom();
+        const dom = this.renderDOM();
 
         const header = new Header();
         const headerDOM = header.render();
@@ -18,7 +18,6 @@ class App extends Component {
         const addTodo = new AddTodo({
             onAdd: (newTodo) => {
                 todos.push(newTodo);
-                console.log(todos);
                 todoList.update({ todos });
             }
         });

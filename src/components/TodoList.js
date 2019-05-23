@@ -4,7 +4,7 @@ import TodoItem from './TodoItem.js';
 class TodoList extends Component {
 
     render() {
-        const list = this.renderDom();
+        const list = this.renderDOM();
         const todos = this.props.todos;
 
         todos.forEach(todo => {

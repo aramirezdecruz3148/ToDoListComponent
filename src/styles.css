@@ -46,6 +46,11 @@ form {
     color: rgb(76, 76, 76);
 }
 
+#task {
+    width: 150px;
+    height: 15px;
+}
+
 button {
     width: 100px;
     height: 25px;

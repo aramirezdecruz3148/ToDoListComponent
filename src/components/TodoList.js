@@ -4,16 +4,17 @@ import TodoItem from './TodoItem.js';
 class TodoList extends Component {
 
     render() {
-        const list = this.renderDOM();
+        const dom = this.renderDOM();
         const todos = this.props.todos;
+        const onDone = this.props.onDone;
 
         todos.forEach(todo => {
-            const todoItem = new TodoItem({ todo });
+            const todoItem = new TodoItem({ todo, onDone });
             const todoItemDOM = todoItem.render();
-            list.appendChild(todoItemDOM);
+            dom.appendChild(todoItemDOM);
         });
 
-        return list;
+        return dom;
     }
     
     renderTemplate() {

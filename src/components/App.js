@@ -35,7 +35,13 @@ class App extends Component {
         });
         main.appendChild(filter.render());
 
-        const todoList = new TodoList({ todos });
+        const todoList = new TodoList({ todos,
+            onDone: (toDoDone) => {
+                const index = todos.indexOf(toDoDone);
+                todos[index].completed = !todos[index].completed;
+                todoList.update({ todos });
+            }
+        });
         const todoListDOM = todoList.render();
         main.appendChild(todoListDOM);
 

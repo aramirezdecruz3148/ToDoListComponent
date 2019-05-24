@@ -51,6 +51,22 @@ form {
     height: 15px;
 }
 
+#x {
+    border: none;
+    background-color: rgb(251, 104, 104);
+    border-radius: 100%;
+    width: 31px;
+    height: 30px;
+    font-size: 1em;
+    color: black;
+    padding-right: 25px;
+    margin: auto;
+}
+
+#x:hover {
+    background-color: red;
+}
+
 button {
     width: 100px;
     height: 25px;

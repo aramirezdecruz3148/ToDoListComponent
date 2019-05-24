@@ -36,6 +36,11 @@ class App extends Component {
         main.appendChild(filter.render());
 
         const todoList = new TodoList({ todos,
+            onRemove: (todoToRemove) => {
+                const index = todos.indexOf(todoToRemove);
+                todos.splice(index, 1);
+                todoList.update({ todos });
+            },
             onDone: (toDoDone) => {
                 const index = todos.indexOf(toDoDone);
                 todos[index].completed = !todos[index].completed;

@@ -14,6 +14,7 @@ test('TodoItem template', assert => {
     const expected = /*html*/ `
     <label for="wash-dog">
         <input checked name="checkbox" value="wash-dog" type="checkbox"> Wash dog
+        <button id="x">✗</button>
     </label>
     `;
     // act

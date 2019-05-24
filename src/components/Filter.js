@@ -9,8 +9,8 @@ class Filter extends Component {
             const radioResult = form.elements['radio-filter'].value;
             const textResult = form.elements['text-filter'].value;
             this.props.onFilter({
-                task: textResult.value,
-                completed: radioResult.value
+                task: textResult,
+                completed: radioResult
             });
         });
         return dom;

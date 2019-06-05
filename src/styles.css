@@ -33,6 +33,7 @@ h1 {
     height: auto;
     box-shadow: 1px 1px 1px #2d3d51;
     text-shadow: .5px .5px .5px #2d3d51;
+    margin-left: 100px;
 }
 
 label {
@@ -42,8 +43,28 @@ label {
 form {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
     color: rgb(76, 76, 76);
+}
+
+#task {
+    width: 150px;
+    height: 15px;
+}
+
+#x {
+    border: none;
+    background-color: rgb(251, 104, 104);
+    border-radius: 100%;
+    width: 31px;
+    height: 30px;
+    font-size: 1em;
+    color: black;
+    padding-right: 25px;
+    margin: auto;
+}
+
+#x:hover {
+    background-color: red;
 }
 
 button {
@@ -57,6 +78,16 @@ button {
 button:hover {
     background-color: #2486cc;
     color: rgb(76, 76, 76);
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    color: rgb(76, 76, 76);
+}
+
+#text-filter {
+    margin-right: 25px;
+    margin-left: -10px;
 }
 
 footer {

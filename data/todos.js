@@ -2,7 +2,7 @@ const todos = [
     {
         task: 'Wash dog',
         label: 'wash-dog',
-        completed: true
+        completed: false
     },
     {
         task: 'Clean house',
